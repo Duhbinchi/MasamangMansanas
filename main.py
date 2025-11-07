@@ -32,20 +32,26 @@ import tkinter as tk
 import time
 
 def play_video(total_frames):
+    pygame.init()
+    pygame.mixer.pre_init(44100, -16, 2, 2048)
+    pygame.mixer.init()
+    pygame.mixer.music.load('audio.mp3')
+
     root = tk.Tk()
     # root.resizable(False, False)
     root.geometry('1250x750')
     root.resizable(False, False)
-    root.title('Masamang Mansanas (sorry na wala ako magawang matino eh ssob)')
+    root.title('Masamang Mansanas')
     root.deiconify()
     text_widget = tk.Text(root)
-    text_widget.config(fg='green', bg='black') # change colorm
+    text_widget.config(fg='white', bg='black') # change colorm
     text_widget.pack(expand=tk.YES, fill=tk.BOTH)
 
     os.system('mode 150, 500')
     timer = fpstimer.FPSTimer(30)
 
     start_frame = 0
+    play_audio('audio.mp3')
 
     for frame_number in range(start_frame, total_frames):
         text_widget.delete('1.0', tk.END)
@@ -170,8 +176,9 @@ def preflight_operations(path):
 
 
 def main():
+    print("Program Started.\nLoading...")
     total_frames = preflight_operations("BadApple.mp4")
-    play_audio('audio.mp3')
+    # play_audio('audio.mp3')
     play_video(total_frames=total_frames)
 
 if __name__ == '__main__':
