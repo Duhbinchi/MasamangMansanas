@@ -1,0 +1,9 @@
+opencv-python
+pillow
+pygame
+fpstimer
+ffmpeg
+moviepy
+playsound==1.2.2
+
+# pip install -r requirements.txt
