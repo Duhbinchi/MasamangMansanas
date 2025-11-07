@@ -170,15 +170,7 @@ def preflight_operations(path):
 
 
 def main():
-    choice = int(input("\n1. Original\n2. Genshin A\n3. Genshin B\n\nChoose video: "))
-    if choice == 2:
-        video_file_name = "genshin1.mp4"
-    elif choice == 3:
-        video_file_name = "genshin2.mp4"  
-    else:
-        video_file_name = "BadApple.mp4" # Automatically use "BadApple.mp4" as the video file name
-
-    total_frames = preflight_operations(video_file_name)
+    total_frames = preflight_operations("BadApple.mp4")
     play_audio('audio.mp3')
     play_video(total_frames=total_frames)
 
