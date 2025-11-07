@@ -1,11 +1,6 @@
-# MasamangMansanas
-Using Tkinter GUI
-
-# All I did was just output it in a Tkinter Window
-the creator of this bad apple in Python console is CalvinLocke (https://github.com/CalvinLoke/bad-apple)
-I myslef really did nothing, just 5-10 minutes of finding it how to use it in a Tkinter window so don't deserve credit for anything.
-
-END for my README, Their README are as follow:
+# Bad Apple using Tkinter GUI
+All I did was just output it in a Tkinter Window. The creator of this bad apple in Python console is CalvinLocke (https://github.com/CalvinLoke/bad-apple)
+I myslef really did nothing, just 5-10 minutes of finding it how to use it in a Tkinter window so don't deserve credit for anything. END for my message, Their README are as follow:
 
 # bad-apple
  Bad Apple printed out on the console with Python!
